@@ -12,9 +12,17 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = () => {
-  // your code here
+  fs.writeFile('fileName', "fileContent", (err) => {
+     if (err) throw err;
+     
+     console.log(`Your new file ${fileName} has been created`)
+  });
 };
 
 module.exports.mkdir = () => {
-  // your code here
+  fs.mkdir('./', (err) => {
+    if (err) throw err;
+
+    console.log(`Your new direcory has been created`)
+  });
 };
