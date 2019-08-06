@@ -7,5 +7,14 @@ module.exports.ls = () => {
     }, '');
  
     console.log(filesToString);
-});
+  });
+
+};
+
+module.exports.touch = () => {
+  // your code here
+};
+
+module.exports.mkdir = () => {
+  // your code here
 };
